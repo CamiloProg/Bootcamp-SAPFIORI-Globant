@@ -2,5 +2,9 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+    <VBox id='vb' class="sapUiSmallMargin">
+		<Text id='text' text="{i18n>textPruebai18n}" />
+        <Button id='btnBuscar' text="{i18n>textBtn}" press='onPress'></Button>
+	</VBox>
     </Page>
 </mvc:View>
