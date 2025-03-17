@@ -11,7 +11,6 @@ sap.ui.define([
                         success: resolve,
                         error: reject,
                     })
-                    
                 }.bind(this))
             ];
 
