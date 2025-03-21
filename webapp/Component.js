@@ -1,7 +1,7 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
     "com/bootcamp/sapui5/freestyle/model/models",
-     "com/bootcamp/sapui5/freestyle/utils/HomeHelper"
+    "com/bootcamp/sapui5/freestyle/utils/HomeHelper"
 ], (UIComponent, models, HomeHelper) => {
     "use strict";
 
@@ -25,8 +25,10 @@ sap.ui.define([
 
             this.setInitModel(); 
         },
+
         setInitModel: function () {
             HomeHelper.init(this.getModel());
-        } 
+            HomeHelper.setInitModelLocalData(this);
+        }  
     });
 });
